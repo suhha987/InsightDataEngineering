@@ -17,16 +17,17 @@ public class Insight {
 	//static int temp = 0;
 	public static void main(String[] args) throws JSONException {
 		//
-			String outputFile = "/Users/hayoung/Desktop/Application/Insight/output.txt";
+			String output_path = "tweet_output/output.txt";
+			String input_path = "tweet_input/tweets.txt";
 			try {
-				FileWriter fos = new FileWriter(outputFile);
+				FileWriter fos = new FileWriter(output_path);
 				PrintWriter dos = new PrintWriter(fos);
 	
-				String filename = "tweets.txt";
+				//String filename = "tweets.txt";
 				curWindow = new LinkedList<Tweet>();
 				graph = new Graph();
 				try {
-					FileReader fileReader = new FileReader(filename);
+					FileReader fileReader = new FileReader(input_path);
 					BufferedReader br = new BufferedReader(fileReader);
 					String line = br.readLine(); 
 					
