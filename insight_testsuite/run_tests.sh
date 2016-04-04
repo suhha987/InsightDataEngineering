@@ -29,7 +29,7 @@ function find_file_or_dir_in_project {
 
 # check project directory structure
 function check_project_struct {
-  find_file_or_dir_in_project ${PROJECT_PATH} run.sh
+  find_file_or_dir_in_project ${PROJECT_PATH} run2.sh
   find_file_or_dir_in_project ${PROJECT_PATH} src
   find_file_or_dir_in_project ${PROJECT_PATH} tweet_input
   find_file_or_dir_in_project ${PROJECT_PATH} tweet_output
@@ -45,7 +45,7 @@ function setup_testing_input_output {
   mkdir -p ${TEST_OUTPUT_PATH}
 
   cp -r ${PROJECT_PATH}/src ${TEST_OUTPUT_PATH}
-  cp -r ${PROJECT_PATH}/run.sh ${TEST_OUTPUT_PATH}
+  cp -r ${PROJECT_PATH}/run2.sh ${TEST_OUTPUT_PATH}
   cp -r ${PROJECT_PATH}/tweet_input ${TEST_OUTPUT_PATH}
   cp -r ${PROJECT_PATH}/tweet_output ${TEST_OUTPUT_PATH}
 
@@ -79,7 +79,7 @@ function run_all_tests {
     setup_testing_input_output
 
     cd ${GRADER_ROOT}/temp
-    bash run.sh 2>&1
+    bash run2.sh 2>&1
     cd ../
 
     compare_outputs
