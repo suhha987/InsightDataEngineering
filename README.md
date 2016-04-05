@@ -17,3 +17,13 @@ Average degree is calculated as :
 
 ## Solution Explanation
 
+My solution (Insight.java file) does the following :
+
+    1) Read each JSON message from the input file.
+    2) Extract the information from each JSON message, "created_at" and "hashtags". -> Save as a tweet consists of timestamp and hashtags(ArrayList<String>).
+    3) - If the current tweet was created the most recently, then update maxTime appropriately and add this tweet in curWindow(tweets withn in last 60 seconds) and add it to the current graph if it contains hashtags.
+       - Else If the tweet was created between minTime and maxTime, then same as above case.
+       - Else (the tweet was created before minTime), then ignore it.
+
+    
+       
