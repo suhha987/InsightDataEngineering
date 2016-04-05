@@ -1,0 +1,5 @@
+{"created_at":"Mon Mar 28 23:25:21 +0000 2016","entities":{"hashtags":[{"text":"hadoop","indices":[44,51]},{"text":"apache","indices":[44,51]},{"text":"spark","indices":[44,51]}]}}
+{"created_at":"Mon Mar 28 23:25:26 +0000 2016","entities":{"hashtags":[{"text":"kafka","indices":[44,51]}]}}
+{"created_at":"Mon Mar 28 23:25:32 +0000 2016","entities":{"hashtags":[{"text":"storm","indices":[44,51]},{"text":"apache","indices":[44,51]}]}}
+{"created_at":"Mon Mar 28 23:26:00 +0000 2016","entities":{"hashtags":[{"text":"hadoop","indices":[44,51]},{"text":"storm","indices":[44,51]}]}}
+{"created_at":"Mon Mar 28 23:26:30 +0000 2016","entities":{"hashtags":[{"text":"hadoop","indices":[44,51]},{"text":"apache","indices":[44,51]}]}}
